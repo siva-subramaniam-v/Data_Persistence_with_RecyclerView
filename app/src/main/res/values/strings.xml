@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Data Persistence with RecyclerView</string>
+    <string name="home_title">Save Your\nCryptocurrency Addresses</string>
+    <string name="add_address">Add Address</string>
+    <string name="view_addresses">View Addresses</string>
+    <string name="input_title">Add your crypto address</string>
+    <string name="label_example">Ex: Binance BTC</string>
+    <string name="label_label">Label:</string>
+    <string name="address_example">Ex: 0x165CD37b4C644...</string>
+    <string name="source_example">Ex: Metamask, Binance</string>
+    <string name="coin_example">Ex: BTC, ETH</string>
+</resources>

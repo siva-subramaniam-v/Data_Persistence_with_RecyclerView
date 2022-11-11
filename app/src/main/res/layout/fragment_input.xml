@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/input_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="@font/amaranth_bold"
+            android:text="@string/input_title"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/label_edit_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/label_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:hint="@string/label_example"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/address_edit_text"
+            app:layout_constraintEnd_toEndOf="@+id/address_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/address_edit_text" />
+
+        <EditText
+            android:id="@+id/source_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/source_example"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/coin_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/coin_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/coin_edit_text" />
+
+        <EditText
+            android:id="@+id/address_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/address_example"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintStart_toEndOf="@+id/address_label"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/coin_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/coin_example"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/address_edit_text"
+            app:layout_constraintStart_toStartOf="@+id/address_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/address_edit_text" />
+
+        <TextView
+            android:id="@+id/label_label"
+            style="@style/input_label"
+            android:layout_marginStart="32dp"
+            android:text="@string/label_label"
+            app:layout_constraintBottom_toBottomOf="@+id/label_edit_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/label_edit_text" />
+
+        <TextView
+            android:id="@+id/address_label"
+            style="@style/input_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Address:"
+            app:layout_constraintBottom_toBottomOf="@+id/address_edit_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/address_edit_text" />
+
+        <TextView
+            android:id="@+id/coin_name_label"
+            style="@style/input_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Coin:"
+            app:layout_constraintBottom_toBottomOf="@+id/coin_edit_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/coin_edit_text" />
+
+        <TextView
+            android:id="@+id/source_label"
+            style="@style/input_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="Source:"
+            app:layout_constraintBottom_toBottomOf="@+id/source_edit_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/source_edit_text" />
+
+        <Button
+            android:id="@+id/add_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#2979FF"
+            android:text="Add"
+            app:layout_constraintEnd_toEndOf="@+id/source_edit_text"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="@+id/source_edit_text"
+            app:layout_constraintTop_toBottomOf="@+id/source_edit_text" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
